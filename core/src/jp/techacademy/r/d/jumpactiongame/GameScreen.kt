@@ -92,8 +92,7 @@ class GameScreen(private val mGame: MyGdxGame) : ScreenAdapter() , Sound {
 
         val GRAVITY = -12
 
-        var sound: Sound = Gdx.audio.newSound(Gdx.files.internal("data / birdland1.mp3"))
-
+        var sound: Sound = Gdx.audio.newSound(Gdx.files.internal("birdland1.mp3"))
 
     }
 
@@ -121,8 +120,7 @@ class GameScreen(private val mGame: MyGdxGame) : ScreenAdapter() , Sound {
     private var mPrefs: Preferences
 
 
-    var sound: Sound = Gdx.audio.newSound(Gdx.files.internal("data/mysound.mp3"))
-
+    var sound: Sound = Gdx.audio.newSound(Gdx.files.internal("birdland1.mp3"))
 
     init{
         val bgTexture = Texture("back.png")
@@ -224,7 +222,7 @@ class GameScreen(private val mGame: MyGdxGame) : ScreenAdapter() , Sound {
         val starTexture = Texture("star.png")
         val playerTexture = Texture("uma.png")
         val ufoTexture = Texture("ufo.png")
-        val enemyTexture = Texture("uma.png")
+        val enemyTexture = Texture("top.jp.jpg")
 
         var y = 0f
 
@@ -264,7 +262,7 @@ class GameScreen(private val mGame: MyGdxGame) : ScreenAdapter() , Sound {
         mUfo.setPosition(WORLD_WIDTH / 2 - Ufo.UFO_WIDTH / 2, y)
 
         mEnemy = Enemy(enemyTexture,0,0,130,84)
-        mEnemy.setPosition(WORLD_WIDTH/2  - Ufo.UFO_WIDTH /2 ,y)
+        mEnemy.setPosition(WORLD_WIDTH/2  - Ufo.UFO_WIDTH /2 , 30f)
 
 
     }

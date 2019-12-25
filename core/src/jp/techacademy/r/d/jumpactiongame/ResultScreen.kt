@@ -41,7 +41,7 @@ class ResultScreen(private val mGame: MyGdxGame,private val mScore: Int) : Scree
 
 
 
-        mFont = BitmapFont(Gdx.files.internal("fot.fnt"),Gdx.files.internal("font.png"),false)
+        mFont = BitmapFont(Gdx.files.internal("font.fnt"),Gdx.files.internal("font.png"),false)
 
 
     }
